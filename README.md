@@ -45,7 +45,7 @@ And then this:
 ### Updating Phabricator
 This section is only relevant for this those who update their phabricator installation using Git.
 
-Make sure to do remove any changes to the `phabricator/resources/celerity/map.php` file if you're updating phabricator using git:
+Make sure to do remove any changes to the `phabricator/resources/celerity/map.php` file if you're updating phabricator using Git:
 
 ```
 git checkout -- phabricator/resources/celerity/map.php
