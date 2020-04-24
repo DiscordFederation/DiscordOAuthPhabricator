@@ -9,7 +9,7 @@ final class PhutilDiscordFuture extends FutureProxy {
   private $params;
   private $method = 'GET';
 
-  public $version = '0.1.0';
+  public $version = '1.0.0';
 
   public function __construct() {
     parent::__construct(null);
