@@ -54,7 +54,7 @@ final class PhutilDiscordFuture extends FutureProxy {
       $future = new HTTPSFuture($uri);
       $future->setData($this->params);
       $future->addHeader('Authorization', 'Bearer '.$this->accessToken);
-      $future->addHeader('User-Agent', "DiscordOauthPhabricator (https://repl.it/@daegontaven/DiscordAdapter {$this->version})");
+      $future->addHeader('User-Agent', "DiscordOAuthPhabricator (https://git.io/JfLUd {$this->version})");
       $future->setMethod($this->method);
 
       $this->future = $future;
