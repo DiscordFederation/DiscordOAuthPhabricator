@@ -48,7 +48,7 @@ final class PhutilDiscordFuture extends FutureProxy {
         throw new Exception(pht('You must %s!', 'setAccessToken()'));
       }
 
-      $uri = new PhutilURI('https://discordapp.com/');
+      $uri = new PhutilURI('https://discord.com/');
       $uri->setPath('/api/v6/'.$this->action);
 
       $future = new HTTPSFuture($uri);
