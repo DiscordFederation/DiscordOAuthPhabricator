@@ -10,7 +10,7 @@ final class PhutilDiscordAuthAdapter extends PhutilOAuthAuthAdapter {
   }
 
   public function getAdapterDomain() {
-    return 'discordapp.com';
+    return 'discord.com';
   }
 
   public function getAccountID() {
@@ -47,11 +47,11 @@ final class PhutilDiscordAuthAdapter extends PhutilOAuthAuthAdapter {
   }
 
   protected function getAuthenticateBaseURI() {
-    return 'https://discordapp.com/oauth2/authorize';
+    return 'https://discord.com/oauth2/authorize';
   }
 
   protected function getTokenBaseURI() {
-    return 'https://discordapp.com/api/v6/oauth2/token';
+    return 'https://discord.com/api/v6/oauth2/token';
   }
 
   public function getScope() {
