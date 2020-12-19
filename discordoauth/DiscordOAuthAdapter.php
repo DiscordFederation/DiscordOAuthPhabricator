@@ -31,6 +31,10 @@ final class PhutilDiscordAuthAdapter extends PhutilOAuthAuthAdapter {
 
   public function getAccountImageURI() {
     $avatar = $this->getOAuthAccountData('avatar');
+    if (empty($avatar) {  // Return Default Avatar URL
+      $discriminator = $this->getOAuthAccountData('discriminator') % 5;
+      return "https://cdn.discordapp.com/embed/avatars/{$discriminator}.png";
+    }
     $user_id = $this->getAccountID();
     if (strpos($avatar, "a_") === 0) {
       $avatar = "https://cdn.discordapp.com/avatars/{$user_id}/{$avatar}.gif";
