@@ -49,7 +49,7 @@ final class PhutilDiscordFuture extends FutureProxy {
       }
 
       $uri = new PhutilURI('https://discord.com/');
-      $uri->setPath('/api/v6/'.$this->action);
+      $uri->setPath('/api/v9/'.$this->action);
 
       $future = new HTTPSFuture($uri);
       $future->setData($this->params);

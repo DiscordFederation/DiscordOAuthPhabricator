@@ -51,7 +51,7 @@ final class PhutilDiscordAuthAdapter extends PhutilOAuthAuthAdapter {
   }
 
   protected function getTokenBaseURI() {
-    return 'https://discord.com/api/v6/oauth2/token';
+    return 'https://discord.com/api/v9/oauth2/token';
   }
 
   public function getScope() {
